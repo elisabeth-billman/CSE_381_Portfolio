@@ -6,14 +6,14 @@ size()| Return the size of the queue | length = len(my_queue)
 empty() | Returns true if the length of the queue is zero. | if len(my_queue) == 0:             
 				   
 				   
-				   **Course Tracker**                              
- ---------------------------- | ---------------------------------- 
- Week |        Tuesday        |        Thursday       | Percentage 
-      | CRU | PFP | CDL | CAE | CRU | PFP | CDL | CAE |            
-  1   | X   | X   | X   | X   | X   | X   | X   | X   |    100     
-  2   | X   | X   | X   | X   | X   | X   | X   | X   |    100     
-  3   | X   | X   | X   | X   | NC  | NC  | NC  | NC  |    100     
-  4   | GC  | GC  | GC  | GC  | GC  | GC  | GC  | GC  |            
+
+ Week |        Tuesday        |        Thursday       | Percentage
+ ---- | --------------------- | --------------------- | ----------
+      | CRU  PFP  CDL  CAE    | CRU  PFP  CDL  CAE    |            
+  1   |  X    X    X    X     |  X    X    X    X     |    100     
+  2   |  X    X    X    X     |  X    X    X    X     |    100     
+  3   |  X    X    X    X     | NC    NC   NC   NC    |    100     
+  4   | GC    GC   GC   GC    | GC    GC   GC  GC     |            
 
 
                        **Grade Claim**                        
