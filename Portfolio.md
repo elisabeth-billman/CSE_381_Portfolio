@@ -17,6 +17,7 @@ Week |        Tuesday        |        Thursday       | Percentage
 
                                             
  Claim Week | Grade Claim | Instructor Grade | Adjusted Grade 
+ ----| ---- | ---- | ----|
       4     |      B      |                  |                
      7-8    |             |                  |                
    11-12    |             |                  |                
