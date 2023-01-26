@@ -19,6 +19,8 @@
 
 ## Definition of an Algorithm 
 a sequence of instructions for solving a problem with a specific outcome with any input.
+
+
 ![algorithm example](algorithm.png)
 
 ### Euclid’s algorithm for computing gcd(m, n) pseudocode:
@@ -33,6 +35,7 @@ n ← r
 return m
 
 ## steps to understanding the problem:
+
 ![understanding the problem steps](understandingtheproblem.png)
 
 ## Factorial code:
@@ -171,7 +174,7 @@ print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 -1.1 Number 6, 12
 	
-### a. Find gcd(31415, 14142) by applying Euclid’s algorithm.
+a. Find gcd(31415, 14142) by applying Euclid’s algorithm.
 
 ``` python
 def find_gcd(first, second)
@@ -188,16 +191,16 @@ find_gcd(31415, 14142)
 
 
 ```
-### b. Estimate how many times faster it will be to find gcd(31415, 14142) by
-### Euclid’s algorithm compared with the algorithm based on checking consecutive ### integers from min{m, n} down to gcd(m, n). 
+ b. Estimate how many times faster it will be to find gcd(31415, 14142) by
+Euclid’s algorithm compared with the algorithm based on checking consecutive ### integers from min{m, n} down to gcd(m, n). 
 since the gcd between 31415, 14142 is it would take the consecutive checking 14142 iterations until it finally reaches the gcd. hoever with Euclid's algorithmn it only takes 10 steps meaning the Euclid's algorithimn can be estimated to run 1414 times faster than the consecutive checking approach. 
 
-### 12. Locker doors There are n lockers in a hallway, numbered sequentially from
-### 1 to n. Initially, all the locker doors are closed. You make n passes by the
-### lockers, each time starting with locker #1. On the ith pass, i = 1, 2,...,n, you
-### toggle the door of every ith locker: if the door is closed, you open it; if it is
-### open, you close it. After the last pass, which locker doors are open and which
-### are closed? How many of them are open?
+ 12. Locker doors There are n lockers in a hallway, numbered sequentially from
+1 to n. Initially, all the locker doors are closed. You make n passes by the
+lockers, each time starting with locker #1. On the ith pass, i = 1, 2,...,n, you
+toggle the door of every ith locker: if the door is closed, you open it; if it is
+open, you close it. After the last pass, which locker doors are open and which
+are closed? How many of them are open?
 
 ``` python
 
@@ -220,15 +223,16 @@ get_lockers([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
 
 
 -1.2 Number 1
-### A peasant finds himself on a riverbank with a wolf, a goat,
-### and a head of cabbage. He needs to transport all three to the other side of the
-### river in his boat. However, the boat has room for only the peasant himself
-### and one other item (either the wolf, the goat, or the cabbage). In his absence,
-### the wolf would eat the goat, and the goat would eat the cabbage. Solve this
-### problem for the peasant or prove it has no solution. (Note: The peasant is a
-### vegetarian but does not like cabbage and hence can eat neither the goat nor
-### the cabbage to help him solve the problem. And it goes without saying that
-### the wolf is a protected species.)
+A peasant finds himself on a riverbank with a wolf, a goat,
+and a head of cabbage. He needs to transport all three to the other side of the
+river in his boat. However, the boat has room for only the peasant himself
+and one other item (either the wolf, the goat, or the cabbage). In his absence,
+the wolf would eat the goat, and the goat would eat the cabbage. Solve this
+problem for the peasant or prove it has no solution. (Note: The peasant is a
+vegetarian but does not like cabbage and hence can eat neither the goat nor
+the cabbage to help him solve the problem. And it goes without saying that
+the wolf is a protected species.)
+
 1. first take the goat to the other side of the river and leave the wolf and cabbage
 2. go back to the riverbank and pick up the wolf and bring it to the otherside drop off the wolf and pick up the goat
 3. bring the goat back to the riverbank and pick up the cabbage
@@ -237,8 +241,8 @@ get_lockers([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
 
 
 -2.2 Number 1
-### 1. Use the most appropriate notation among O, θ , and  Ω  to indicate the time
-### efficiency class of sequential search (see Section 2.1)
+1. Use the most appropriate notation among O, θ , and  Ω  to indicate the time
+efficiency class of sequential search (see Section 2.1)
  a. in the worst case. O(n^2) θ(n^2) Ω(n^2)
  b. in the best case.  O(1) θ(1) Ω(1)
  c. in the average case. O(n) θ(n) Ω(n)
