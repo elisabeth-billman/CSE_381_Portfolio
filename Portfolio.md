@@ -1,9 +1,4 @@
-Queue Operation | Description | Python Code
--------- | -------- | --------
-enqueue(value) | Adds "value" to the back of the queue| my_queue.append(value)
-dequeue()| Remove and return the item from the front of the queue; or pop off index 0 | value = my_queue[0] del my_queue[0] or value = my_queue.pop(0)
-size()| Return the size of the queue | length = len(my_queue)
-empty() | Returns true if the length of the queue is zero. | if len(my_queue) == 0:             
+          
 				   
 				   
 Week |        Tuesday        |        Thursday       | Percentage
