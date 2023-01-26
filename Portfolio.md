@@ -9,7 +9,7 @@ empty() | Returns true if the length of the queue is zero. | if len(my_queue) ==
 
  Week |        Tuesday        |        Thursday       | Percentage
  ---- | --------------------- | --------------------- | ----------
-      | CRU  PFP  CDL  CAE    | CRU  PFP  CDL  CAE    |            
+  -   | CRU  PFP  CDL  CAE    | CRU  PFP  CDL  CAE    |     -      
   1   |  X    X    X    X     |  X    X    X    X     |    100     
   2   |  X    X    X    X     |  X    X    X    X     |    100     
   3   |  X    X    X    X     | NC    NC   NC   NC    |    100     
