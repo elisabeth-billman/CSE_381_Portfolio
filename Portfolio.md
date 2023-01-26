@@ -1,18 +1,18 @@
-|                   **Course Tracker**                              |
-| ---------------------------- | ---------------------------------- |
-| Week |        Tuesday        |        Thursday       | Percentage |
-|      | CRU | PFP | CDL | CAE | CRU | PFP | CDL | CAE |            |
-|  1   | X   | X   | X   | X   | X   | X   | X   | X   |    100     |
-|  2   | X   | X   | X   | X   | X   | X   | X   | X   |    100     |
-|  3   | X   | X   | X   | X   | NC  | NC  | NC  | NC  |    100     |
-|  4   | GC  | GC  | GC  | GC  | GC  | GC  | GC  | GC  |            |
+                   **Course Tracker**                              
+ ---------------------------- | ---------------------------------- 
+ Week |        Tuesday        |        Thursday       | Percentage 
+      | CRU | PFP | CDL | CAE | CRU | PFP | CDL | CAE |            
+  1   | X   | X   | X   | X   | X   | X   | X   | X   |    100     
+  2   | X   | X   | X   | X   | X   | X   | X   | X   |    100     
+  3   | X   | X   | X   | X   | NC  | NC  | NC  | NC  |    100     
+  4   | GC  | GC  | GC  | GC  | GC  | GC  | GC  | GC  |            
 
 
-|                       **Grade Claim**                        |
-| Claim Week | Grade Claim | Instructor Grade | Adjusted Grade |
-|      4     |      B      |                  |                |
-|     7-8    |             |                  |                |
-|   11-12    |             |                  |                |
+                       **Grade Claim**                        
+ Claim Week | Grade Claim | Instructor Grade | Adjusted Grade 
+      4     |      B      |                  |                
+     7-8    |             |                  |                
+   11-12    |             |                  |                
 
 
 # Introduction
