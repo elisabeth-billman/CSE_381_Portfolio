@@ -19,7 +19,7 @@
 
 ## Definition of an Algorithm 
 a sequence of instructions for solving a problem with a specific outcome with any input.
-![algorithm example](algorithm.jpg)
+![algorithm example](algorithm.png)
 
 ### Euclid’s algorithm for computing gcd(m, n) pseudocode:
 Euclid(m, n)
@@ -33,7 +33,7 @@ n ← r
 return m
 
 ## steps to understanding the problem:
-![understanding the problem steps](understandingtheproblem.jpg)
+![understanding the problem steps](understandingtheproblem.png)
 
 ## Factorial code:
 ```python
@@ -101,17 +101,17 @@ print(binary_search([1,2,3,5,8], 5))
 ## Big- θ (Big Theta) notation:
 When we say that a particular running time is Θ(n), we're saying that once n gets large enough, the running time is at least k1*n and at most k2* n for some constants k1 and k2. Here's how to think of Θ(n)
 
-![Big Theta](BigTheta.jpg)
+![Big Theta](BigTheta.png)
  
 ## Big-O notation:
 If a running time is O(f(n)), then for large enough n, the running time is at most k * f(n) for some constant k. Here's how to think of a running time that is O(f(n)):
 
-![Big O](BigO).jpg)
+![Big O](BigO).png)
 
 ## Big- Ω (Big-Omega) notation:
 If a running time is Ω(f(n)), then for large enough n, the running time is at least k⋅f(n) for some constant k. Here's how to think of a running time that is Ω(f(n))
 
-![Big Omega](BigOmega.jpg)
+![Big Omega](BigOmega.png)
 
 ### If you have a function f(N):
 Big-O tells you which functions grow at a rate >= than f(N), for large N
