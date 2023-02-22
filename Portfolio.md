@@ -4,17 +4,22 @@
 Week |        Tuesday        |        Thursday       | Percentage
 ---- | --------------------- | --------------------- | ----------
   -- | CRU  PFP  CDL  CAE    | CRU  PFP  CDL  CAE    |     --     
-1   |  X    X    X    X     |  X    X    X    X     |    100     
-2   |  X    X    X    X     |  X    X    X    X     |    100     
-3   |  X    X    X    X     | NC    NC   NC   NC    |    100     
-4   | GC    GC   GC   GC    | GC    GC   GC  GC     |     --       
+1    |  X    X    X    X     |  X    X    X    X     |    100     
+2    |  X    X    X    X     |  X    X    X    X     |    100     
+3    |  X    X    X    X     | NC    NC   NC   NC    |    100     
+4    | GC    GC   GC   GC    | GC    GC   GC  GC     |    100       
+5    |  X    X    X    X     |  X    X    X    X     |    100     
+6    |  X    X    X    X     |  X    X    X    X     |    100       
+7    | WD    WD   WD   WD    | GC    GC   GC   GC    |    100     
+8    | NC    NC   NC   NC    | GC    GC   GC  GC     |    100       
+
 
 
                                             
  Claim Week | Grade Claim | Instructor Grade | Adjusted Grade 
  ----| ---- | ---- | ----|
 4     |      B      |                  |                
-7-8    |             |                  |                
+7-8    |     A       |                  |                
 11-12    |             |                  |                
 
 
@@ -193,11 +198,13 @@ def find_gcd(first, second)
 
 find_gcd(31415, 14142)
 
+#answer gcd = 1
+
 
 ```
  b. Estimate how many times faster it will be to find gcd(31415, 14142) by
 Euclid’s algorithm compared with the algorithm based on checking consecutive ### integers from min{m, n} down to gcd(m, n). 
-since the gcd between 31415, 14142 is it would take the consecutive checking 14142 iterations until it finally reaches the gcd. hoever with Euclid's algorithmn it only takes 10 steps meaning the Euclid's algorithimn can be estimated to run 1414 times faster than the consecutive checking approach. 
+since the gcd between 31415, 14142 is it would take the consecutive checking 14142 iterations until it finally reaches the gcd. hoever with Euclid's algorithmn it only takes 11 steps meaning the Euclid's algorithimn can be estimated to run 1414 times faster than the consecutive checking approach. 
 
  12. Locker doors There are n lockers in a hallway, numbered sequentially from
 1 to n. Initially, all the locker doors are closed. You make n passes by the
@@ -221,6 +228,8 @@ def get_lockers(lockers)
     return lockers
 
 # 0 is closed, 1 is open
+# all the lockers on square numbers will be open
+# the number of times a locker is toggled is equal to its divisor.
 get_lockers([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
 
 ```
@@ -247,9 +256,9 @@ the wolf is a protected species.)
 -2.2 Number 1
 1. Use the most appropriate notation among O, θ , and  Ω  to indicate the time
 efficiency class of sequential search (see Section 2.1)
- a. in the worst case. O(n^2) θ(n^2) Ω(n^2)
- b. in the best case.  O(1) θ(1) Ω(1)
- c. in the average case. O(n) θ(n) Ω(n)
+ a. in the worst case. O(n) 
+ b. in the best case.   Ω(1)
+ c. in the average case. θ(n) 
 
 
 ```python
@@ -301,11 +310,298 @@ the largest number of complete pairs remaining. Thus, you are left with
 the worst case. Assuming that the probability of disappearance for each
 of the 10 socks is the same, find the probability of the best-case scenario;
 the probability of the worst-case scenario; the number of pairs you should
-expect in the average case.
+expect in the average case. 
+best case 1/9 worst case 8/9
+
+9.
+a. n(n + 1) and 2000n2 - higher
+b. 100n^2 and 0.01n^3 - lower
+c. log2 n and ln n -same
+d. log2- same
+2 n and log2 n2- lower
+e. 2^n−1 and 2^n - lower
+f. (n − 1)! and n! - lower
 
 -2.2 2a-d
 a. false
 d. true
 
+![practice problems](practiceproblems.png)
+
+-3.1 Numbers 3, 7, 8, 9
+3. For each of the algorithms in Problems 4, 5, and 6 of Exercises 2.3, tell whether
+or not the algorithm is based on the brute-force approach. 4) not brute force 5) not brute force 6) yes brute force
+
+7. A stack of fake coins There are n stacks of n identical-looking coins. All of
+the coins in one of these stacks are counterfeit, while all the coins in the other
+stacks are genuine. Every genuine coin weighs 10 grams; every fake weighs
+11 grams. You have an analytical scale that can determine the exact weight of
+any number of coins.
+
+a. Devise a brute-force algorithm to identify the stack with the fake coins and
+determine its worst-case efficiency class.
+b. What is the minimum number of weighings needed to identify the stack
+with the fake coins?
+
+seperate the stacks
+weigh one coin from each stack 
+whichever coin weighs 11 grams is cointerfit
+minimum number of weighings would be 2 O(1)
+
+8. Sort the list E, X, A, M, P , L, E in alphabetical order by selection sort.
 
 
+
+-4.1 Number 1
+
+-4.2 Number 1
+
+Screen Shot Problems
+4.
+
+
+5. 
+False - 
+True
+False
+False
+False
+
+10. 
+algorithm A - because the amount of data being processed is so large
+
+
+11.
+algorithm B n= 500sqrt(n)
+
+
+## Selection Sort
+Psuedocode:
+1. Find the smallest card. Swap it with the first card.
+2. Find the second-smallest card. Swap it with the second card.
+3. Find the third-smallest card. Swap it with the third card.
+4. Repeat finding the next-smallest card, and swapping it into the correct position until the array is sorted.
+
+this algorithm is called selection sort because it repeatedly selects the next-smallest element and swaps it into place.
+
+### Benefits of selection sort
+-selection sort is simple
+-it only requires n swaps
+-it is good for real time applications
+-it works well with small inputs
+
+### cons of selection sort
+-O(n^2) is slower than O(n log n) algorithms 
+- insertion sort is faster than selection sort with small inputs
+
+
+###Team Selection Sort example:
+``` python
+def selection_sort(List) :
+    Min = List[0]
+    Swap_Index = 0
+    for N in range(len(List)) :
+        Min = List[N]
+        Swap_From_Index = N
+        for I in range(Swap_Index, len(List)) :
+            if List[I] < Min :
+                Min = List[I]
+                Swap_From_Index = I
+            print("[I: ", I, "Min:", Min,"]",", ",end="")
+        List[Swap_From_Index] = List[Swap_Index]
+        List[Swap_Index] = Min
+        print("\nList:" + str(List))
+        Swap_Index += 1
+    return List 
+	```
+###Team Insertion Sort example:
+``` python
+
+    for i in range(arr):
+         
+        key = arr[i]
+ 
+        # Move elements of arr[0..i-1], that are
+        # greater than key, to one position ahead
+        # of their current position
+        j = i-1
+        while j >=0 and key < arr[j] :
+                arr[j+1] = arr[j]
+                j -= 1
+        arr[j+1] = key
+```
+###Topological Sort example:
+The topological sort algorithm takes a directed graph and returns an array of the nodes where each node appears before all the nodes it points to. The ordering of the nodes in the array is called a topological ordering.
+![Topological example](TopologicalSorting.png)
+```python 
+
+from collections import defaultdict
+class Graph:
+    def __init__(self,n):
+        self.graph = defaultdict(list)
+        self.N = n
+        
+    def addEdge(self,u,v):
+        self.graph[u].append(v)
+
+    def sort(self,n,visited,stack):
+        visited[n] = True
+        for element in self.graph[n]:
+            if visited[element] == False:
+                self.sort(element,visited,stack)
+
+            stack.insert(0,n)
+
+    def topologicalSort(self):
+        visited = [False]*self.N
+        stack =[]
+
+        for element in range(self.N):
+            if visited[element] == False:
+                self.sort(element,visited,stack)
+
+        print(stack)
+
+graph = Graph(6)
+graph.addEdge(0,1)
+graph.addEdge(0,2)
+graph.addEdge(1,2)
+graph.addEdge(2,3)
+graph.addEdge(2,4)
+graph.addEdge(3,4)
+
+print("Topological Sort:  ")
+
+graph.topologicalSort()
+
+
+```
+
+
+# Brute Force + Exhaustive Search
+
+## Brute force simple explanation:
+Brute force algorithms is a method that of solving problems with trying every possibility rather than using techniques to inmprove efficancy.
+
+### examples of brute force:
+trying to guess a pad lock by trying every single number combo starting at 0000 then 0001 0002 0003....
+
+Exhaustive search is simply a brute-force approach to combinatorial problems
+
+the traveling salse man problem: 
+a slase man needs to visit 10 cities across the country. brute force means to calculate the distance for every possible route not just the shortest or most efficiant one
+
+## preformance of brute force:
+the smaller the problem the more efficant brute force will be. you have a challenge of finding all the integers between 1 and 100,000,000 that are divisible by 511. If you take a simple approach, Brute Force algorithm would generate all the integers that are in the range. You can reduce the search criteria and make it more efficient by starting with 511 and repeatedly adding the same number until the number exceeds the given limit.
+
+brute force can be done with trial and error, searching a number, sorting, or finding integers between a number
+
+# Grade Claim 2 Problems 
+
+## 3.1 Numbers 3, 7, 8, 9 
+
+3.) For each of the algorithms in Problems 4, 5, and 6 of Exercises 2.3, tell whether
+or not the algorithm is based on the brute-force approach.
+-algorithm 4 is a brute force algorithm it is trying to find the mystery number by adding one each loop untill the number is found. 
+-algorithm 5 is not a brute force algorithm because it is finding the mystery number by splitting the array in half
+-algorithm 6 is a brute force method
+
+7.)A stack of fake coins There are n stacks of n identical-looking coins. All of
+the coins in one of these stacks are counterfeit, while all the coins in the other
+stacks are genuine. Every genuine coin weighs 10 grams; every fake weighs
+11 grams. You have an analytical scale that can determine the exact weight of
+any number of coins.
+a. Devise a brute-force algorithm to identify the stack with the fake coins and
+determine its worst-case efficiency class.
+1. choose the first coin to be a test coin
+2. compare each coin to the first coin one by one on a scale.
+3. when the scale is not balanced that means the fake coin has been found.
+
+b. What is the minimum
+time complaxity in O(n) n is the number of coins the min would be only pulling two coins with the second coin being the fake. 
+
+8.) Sort the list E, X, A, M, P , L, E in alphabetical order by selection sort.
+
+``` python 
+def Selection(arr,n):
+   
+    # One by one move boundary of unsorted subarray
+    for i in range(n):
+        min_index = i
+        min_str = arr[i]
+         
+        # Find the minimum element in unsorted subarray
+        for j in range(i+1,n):
+             
+            # If min_str is greater than arr[j]
+            if min_str>arr[j]:
+                 
+                # Make arr[j] as min_str and update min_index as j
+                min_str = arr[j]
+                min_index = j
+                 
+        # Swap the found minimum element with the first element      
+        if min_index != i:
+             
+            # Store the first element in temp
+            temp = arr[i]
+             
+            # Place the min element at the first position
+            arr[i] = arr[min_index]
+
+			# place the element in temp at min_index
+            arr[min_index] = temp
+      
+    # Return the sorted array
+    return arr
+ 
+arr = ["E","X","A","M","P","L","E"]
+ 
+print("Given array is")
+for i in range(len(arr)):
+    print(i,":",arr[i])
+ 
+print("\nSorted array is")
+for i in range(len(Selection(arr,len(arr)))):
+    print(i,":",Selection(arr,len(arr))[i]) 
+	```
+             
+9.) Is selection sort stable? 
+it is not stable because selection sort works by finding the minimum elements and iterting it in the right position by swapping.
+
+## 4.1 Number 1 
+1.) Ferrying soldiers A detachment of n soldiers must cross a wide and deep
+river with no bridge in sight. They notice two 12-year-old boys playing in a
+rowboat by the shore. The boat is so tiny, however, that it can only hold two
+boys or one soldier. How can the soldiers get across the river and leave the
+boys in joint possession of the boat? How many times need the boat pass from
+shore to shore?
+1. the boys row together across the river together, boy number one gets out 
+2. boy number two rows back to the soilders and gets out of the boat. 
+3. a soilder rows across the river to boy number one and gets out of the boat
+4. boy number one rows back across the river to boy number two.
+5. repeat steps 1-4 for every soilder 
+it takes the amount of soilders * 4 to find the amount of times the boat goes shore to shore.
+
+## 4.2 Number 1 
+1.) Apply the DFS-based algorithm to solve the topological sorting problem for
+the following digraphs:
+![digraphs](problem1.png)
+
+stack          |  adj  |  S               |  pop
+---------------|-------|------------------|-----
+  _            |  _    |  a               |  _
+  a            |  b    | a,b              |  _
+ a, b          |  e    | a,b,e            |  _
+ a,b,e         |  _    | a,b,e            |  e
+ a,b           |  g    | a,b,e,g          |  _
+ a,b,g         |  f    | a,b,e,g,f        |  _
+ a,b,g,f       |  _    | a,b,e,g,f        |  f
+ a,b,g         |  _    | a,b,e,g,f        |  g
+ a,b           |  _    | a,b,e,g,f        |  b
+ a             |  c    | a,b,e,g,f,c      |  _
+ a,c           |  _    | a,b,e,g,f,c      |  c
+ a             |  _    | a,b,e,g,f,c      |  a
+ _             |  _    | a,b,e,g,f,c      |  d
+
+ d -> a -> c -> b -> g -> f -> e
