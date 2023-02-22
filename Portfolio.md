@@ -472,9 +472,7 @@ graph.addEdge(3,4)
 
 print("Topological Sort:  ")
 
-graph.topologicalSort()
-
-
+graph.topologicalSort() 
 ```
 
 
@@ -564,7 +562,7 @@ for i in range(len(arr)):
 print("\nSorted array is")
 for i in range(len(Selection(arr,len(arr)))):
     print(i,":",Selection(arr,len(arr))[i]) 
-	```
+```
              
 9.) Is selection sort stable? 
 it is not stable because selection sort works by finding the minimum elements and iterting it in the right position by swapping.
