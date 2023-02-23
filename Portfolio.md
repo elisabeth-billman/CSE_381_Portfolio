@@ -327,7 +327,28 @@ a. false
 d. true
 
 ![practice problems](practiceproblems.png)
+4. 
+- O(n^3)
+- O(n^1.5)
+- O(n^1.75)
+- O(n^2)
+- O(log3n)
+- O(log8n)
+- O(n^2)
+- O(n^2)
+- O(n^1.25)
+- O(log2n^2)
+- O(n^3)
+- O(log4n)
+5.
+- True
+- True
+- False g= O(f)
+- False O(n^3)
+- False O(n^3)
+10. package b has a better preformance time because it is o(n) which has a better preformance compared to O(nlogn)
 
+11. package B has a better preformance than the first pachage O(n)
 -3.1 Numbers 3, 7, 8, 9
 3. For each of the algorithms in Problems 4, 5, and 6 of Exercises 2.3, tell whether
 or not the algorithm is based on the brute-force approach. 4) not brute force 5) not brute force 6) yes brute force
@@ -586,7 +607,7 @@ it takes the amount of soilders * 4 to find the amount of times the boat goes sh
 the following digraphs:
 ![digraphs](problem1.png)
 
-stack          |  adj  |  S               |  pop
+stack          |  adj  |  S               |  pop                  
 ---------------|-------|------------------|-----
   _            |  _    |  a               |  _
   a            |  b    | a,b              |  _
@@ -603,3 +624,21 @@ stack          |  adj  |  S               |  pop
  _             |  _    | a,b,e,g,f,c      |  d
 
  d -> a -> c -> b -> g -> f -> e
+
+stack          |  adj  |  S               |  pop                  
+---------------|-------|------------------|-----
+  _            |  _    |  a               |  _
+  a            |  b    | a,b              |  _
+ a,b           |  c    | a,b,c            |  _
+ a,b,c         |  d    | a,b,c,d          |  _
+ a,b,c,d       |  g    | a,b,c,d,g        |  _
+ a,b,c,d,g     |  e    | a,b,c,d,g,e      |  _
+ a,b,c,d,g,e   |  _    | a,b,c,d,g,e      |  e
+ a,b,c,d,g     |  _    | a,b,c,d,g,e      |  g
+ a,b,c,d       |  _    | a,b,c,d,g,e      |  d
+ a,b,c         |  _    | a,b,c,d,g,e      |  c
+ a,b           |  _    | a,b,c,d,g,e      |  b
+ a             |  _    | a,b,c,d,g,e      |  a
+ _             |  _    | a,b,c,d,g,e      |  f
+
+ f -> a -> b -> c -> d -> g -> e
