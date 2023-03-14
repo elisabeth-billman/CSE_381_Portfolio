@@ -25,7 +25,7 @@ Week |        Tuesday        |        Thursday       | Percentage
  ----| ---- | ---- | ----|
 4     |      B      |     B             |         B       
 7-8    |     A       |        A          |        A        
-11-12    |     A        |                  |                
+11    |     A        |                  |                
 
 
 # Introduction
