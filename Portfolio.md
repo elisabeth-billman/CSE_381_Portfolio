@@ -1,6 +1,4 @@
-          
-				   
-				   
+
 Week |        Tuesday        |        Thursday       | Percentage
 ---- | --------------------- | --------------------- | ----------
   -- | CRU  PFP  CDL  CAE    | CRU  PFP  CDL  CAE    |     --     
@@ -14,13 +12,8 @@ Week |        Tuesday        |        Thursday       | Percentage
 8    | NC    NC   NC   NC    | GC    GC   GC  GC     |    100  
 9    |  X    X    X    X     |  X    X    X    X     |    100     
 10   |  X    X    X    X     |  X    X    X    X     |    100  
-11   | GC    GC   GC   GC    | GC    GC   GC  GC     |    100  
-     
-     
+11   | GC    GC   GC   GC    | GC    GC   GC  GC     |    100 
 
-
-
-                                            
  Claim Week | Grade Claim | Instructor Grade | Adjusted Grade 
  ----| ---- | ---- | ----|
 4     |      B      |     B             |         B       
