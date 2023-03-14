@@ -339,6 +339,7 @@ a. false
 d. true
 
 ![practice problems](practiceproblems.png)
+
 4. 
 - O(n^3) - n^3
 - O(n^1.5) -n^1.5
@@ -400,7 +401,7 @@ this algorithm is called selection sort because it repeatedly selects the next-s
 - insertion sort is faster than selection sort with small inputs
 
 
-###Team Selection Sort example:
+### Team Selection Sort example:
 
 ``` python
 def selection_sort(List) :
