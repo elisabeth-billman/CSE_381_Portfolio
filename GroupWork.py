@@ -61,3 +61,66 @@ for i in range(len(arr)):
 print("\nSorted array is")
 for i in range(len(Selection(arr,len(arr)))):
     print(i,":",Selection(arr,len(arr))[i]) 
+
+
+
+
+# Finding the mid of the array
+        #mid = len(arr)//2         # Dividing the array elements
+        #L = arr[:mid]         # into 2 halves
+        #R = arr[mid:]         # Sorting the first half
+        #mergeSort(L)         # Sorting the second half
+        #mergeSort(R)
+
+
+#for i in range(a[0],a[n/2]):
+#array_one.append(a[i])
+#for i in range(a[n/2+1], a[n]):    
+#array_two.append(a[i])
+# Finding the mid of the array#mid = len(arr)//2         
+# Dividing the array elements#L = arr[:mid]         
+# into 2 halves#R = arr[mid:]         
+# Sorting the first half#mergeSort(L)         
+# Sorting the second half
+#mergeSort(R)
+
+def mergesort(a):
+
+    n = len(a) 
+
+    if(n == 1):  
+        return a  
+
+    mid = len(a)//2  
+    L = a[:mid]  
+    R = a[mid:] 
+ 
+    mergesort(L)  
+    mergesort(R) 
+ 
+    a[:] = merge(L,R)  
+    return a  
+
+def merge(a,b):  
+    c = []  
+    while(len(a) != 0 and len(b) != 0):    
+        if(a[0]>b[0]):      
+            c.append(b[0])      
+            #print(b[0])      
+            del b[0]    
+        else:      
+            c.append(a[0])      
+            del a[0]    
+    
+    while(len(a) > 0):    
+        c.append(a[0])    
+        del a[0]  
+        
+    while(len(b) > 0):    
+        c.append(b[0])    
+        del b[0]  
+    
+    return c
+
+
+
